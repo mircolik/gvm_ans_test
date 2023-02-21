@@ -1,10 +1,6 @@
 ---
-- name: Ping and greet
+- name: Ping hosts
   hosts: all
   tasks:
-    - name: Test connectivity
+    - name: Ping
       ansible.builtin.ping:
-
-    - name: Print message
-      ansible.builtin.debug:
-        msg: Hello world
